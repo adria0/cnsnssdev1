@@ -1,0 +1,35 @@
+@import "normalize.css";
+@import "skeleton.css";
+@import "skeleton-tabs.css";
+@import "toastr.css";
+
+.info {
+  font-size: 12;
+}
+
+.blockymember {
+  width: 100px;
+  text-align: center;
+}
+
+.blocky {
+  width: 32px;
+  height: 32px;
+  margin: 0 auto 0 auto;
+  cursor: pointer; cursor: hand;
+}
+
+.topcorner{
+   position:absolute;
+   top:10px;
+   right:10px;
+}
+
+.status{
+  height: 32px;
+  display:block;
+}
+
+.h2 {
+  -webkit-margin-after : 0px;
+}

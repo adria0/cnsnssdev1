@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+      <script src="./app.js"></script>
+   </head>
+   <body>
+      <div class="container">
+         <div class="row">
+            <div class="four column">
+               <h2>Remittance</h2>
+               <span id="status"></span>
+               <ul class="tab-nav">
+                  <li>
+                     <a class="button active" href="#senderTab">Sender</a>
+                  </li>
+                  <li>
+                     <a class="button" href="#reciverTab">Reciver</a>
+                  </li>
+                  <li>
+                     <a class="button" href="#exchangeTab">Exchange</a>
+                  </li>
+               </ul>
+               <div class="tab-content">
+                  <div class="tab-pane active" id="senderTab">
+                     <form>
+                        <div class="row">
+                           <div class="six columns">
+                              <label for="amount">Amount</label>
+                              <input class="u-full-width" type="number" placeholder="Amount in ethers" id="amount">
+                           </div>
+                           <div class="six columns">
+                              <label for="">Actions</label>
+                              <input id="uiSenderCreatePayment" class="button-primary" type="button" value="Create payment">
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="six columns">
+                              <label for="amount">Code for exchange</label>
+                              <input class="u-full-width" type="text" id="sender_bip39exchange">
+                           </div>
+                           <div class="six columns">
+                              <label for="amount">Code for reciver</label>
+                              <input class="u-full-width" type="text" id="sender_bip39reciver">
+                           </div>
+                        </div>
+                     </form>
+                  </div>
+                  <div class="tab-pane" id="reciverTab">
+                     <form>
+                        <div class="row">
+                           <div class="six columns">
+                              <label for="amount">Code</label>
+                              <input class="u-full-width" type="text" id="reciver_bip39reciver">
+                           </div>
+                           <div class="six columns">
+                              <label for="">Actions</label>
+                              <input id="uiReciverCalcAuth" class="button-primary" type="button" value="Calc authentication">
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="six columns">
+                              <label for="amount">Authcode for exchange</label>
+                              <input class="u-full-width" type="text" id="reciver_bip39authcode">
+                           </div>
+                        </div>
+                     </form>
+                  </div>
+                  <div class="tab-pane" id="exchangeTab">
+                     <form>
+                        <div class="row">
+                           <div class="six columns">
+                              <label for="amount">Exchange code</label>
+                              <input class="u-full-width" type="text" id="exchange_bip39exchange">
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="six columns">
+                              <label for="amount">Reciver auth</label>
+                              <input class="u-full-width" type="text" id="exchange_bip39authcode">
+                           </div>
+                           <div class="six columns">
+                              <label for="amount">Step1. Authenticate and bind</label>
+                              <input id="uiExchangeBind" class="button-primary" type="button" value="Bind">
+                           </div>
+                        </div>
+                     </form>
+                     <form>
+                        <div class="row">
+                           <div class="six columns">
+                              <label for="amount">Reciver code</label>
+                              <input class="u-full-width" type="text" id="exchange_bip39reciver">
+                           </div>
+                           <div class="six columns">
+                              <label for="amount">Step2. Withdraw</label>
+                              <input id="uiExchangeWithdraw" class="button-primary" type="button" value="Withdraw">
+                           </div>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
