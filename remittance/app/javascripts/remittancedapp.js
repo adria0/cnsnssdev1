@@ -14,7 +14,7 @@ const TOPIC_LOGBINDED  = web3.sha3("LogBinded(bytes32,address)")
 const TOPIC_LOGPAID    = web3.sha3("LogPaid(bytes32,address,uint256)")
 const TOPIC_LOGCLAIMED = web3.sha3("LogClaimed(bytes32)")
 
-export default class BettingonDApp {
+export default class RemittanceDApp {
 
   constructor() {    
       this._Remittance = contract(remittanceArtifact);
